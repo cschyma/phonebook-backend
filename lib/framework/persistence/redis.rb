@@ -21,7 +21,7 @@ module Framework
       def add(item)
         # save the item
         item.id = @id
-        @store.set([@klass_name, item.id].join('::'), item.to_json)
+        @store.set([@klass_name, item.id].join('::'), item.serializable_hash.to_json)
         @id += 1
         @store.incr(index_key)
         item
@@ -32,7 +32,7 @@ module Framework
         old = find(item.id.to_i)
         return nil if old.nil?
 
-        @store.set([@klass_name, item.id.to_i].join('::'), item.to_json)
+        @store.set([@klass_name, item.id.to_i].join('::'), item.serializable_hash.to_json)
         item
       end
 
