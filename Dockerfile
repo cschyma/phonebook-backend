@@ -1,4 +1,4 @@
-FROM registry:5000/ruby-phonebook:019ab7bab4cc
+FROM registry:5000/infra/ruby-phonebook:019ab7bab4cc
 MAINTAINER Christoph Lukas <christoph.lukas@gmx.net>
 
 ENV DEBIAN_FRONTEND noninteractive
