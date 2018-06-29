@@ -17,7 +17,7 @@ group :development, :test do
   gem 'rspec'
   gem 'rspec_junit_formatter'
   gem 'rack-test'
-  gem 'guard-rspec'
+  gem 'guard-rspec', '>= 4.7.3'
 end
 gem 'grape'
 gem 'grape-entity'
