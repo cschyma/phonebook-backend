@@ -19,7 +19,7 @@ group :development, :test do
   gem 'rack-test'
   gem 'guard-rspec'
 end
-gem 'grape'
+gem 'grape', '>= 1.1.0'
 gem 'grape-entity'
 gem 'multi_json'
 gem 'activemodel'
